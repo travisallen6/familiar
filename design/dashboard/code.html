@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Inter:wght@100..900&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-low": "#1c1b1b",
+                    "surface-bright": "#393939",
+                    "secondary-fixed-dim": "#2ddbde",
+                    "outline-variant": "#49454e",
+                    "error-container": "#93000a",
+                    "on-secondary-fixed-variant": "#004f51",
+                    "surface-dim": "#131313",
+                    "secondary-container": "#00cdd0",
+                    "surface-tint": "#e9c400",
+                    "on-error": "#690005",
+                    "tertiary-fixed-dim": "#c8c8b0",
+                    "secondary-fixed": "#5af8fb",
+                    "tertiary": "#c8c8b0",
+                    "on-primary-fixed-variant": "#544600",
+                    "secondary": "#46eaed",
+                    "error": "#ffb4ab",
+                    "background": "#131313",
+                    "primary": "#e9c400",
+                    "on-secondary": "#003738",
+                    "on-tertiary-fixed": "#1b1d0e",
+                    "primary-fixed-dim": "#e9c400",
+                    "on-error-container": "#ffdad6",
+                    "on-tertiary-container": "#8d8e79",
+                    "surface-container-high": "#2a2a2a",
+                    "surface-container-lowest": "#0e0e0e",
+                    "on-secondary-container": "#005253",
+                    "on-tertiary": "#303221",
+                    "surface-container": "#201f1f",
+                    "surface-container-highest": "#353534",
+                    "outline": "#948e99",
+                    "inverse-primary": "#705d00",
+                    "on-surface": "#e5e2e1",
+                    "on-secondary-fixed": "#002020",
+                    "primary-container": "#2e2500",
+                    "on-primary-fixed": "#221b00",
+                    "surface-variant": "#353534",
+                    "surface": "#131313",
+                    "primary-fixed": "#ffe16d",
+                    "on-primary": "#3a3000",
+                    "on-background": "#e5e2e1",
+                    "on-surface-variant": "#cbc4d0",
+                    "tertiary-container": "#252717",
+                    "inverse-surface": "#e5e2e1",
+                    "on-tertiary-fixed-variant": "#474836",
+                    "on-primary-container": "#a58b00",
+                    "inverse-on-surface": "#313030",
+                    "tertiary-fixed": "#e4e4cc"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Newsreader"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .bg-arcane-gradient {
+            background: linear-gradient(135deg, #e9c400 0%, #a58b00 100%);
+        }
+        .glass-panel {
+            background: rgba(53, 53, 52, 0.4);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body selection:bg-primary/30 selection:text-primary min-h-screen pb-24">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-neutral-950/80 backdrop-blur-xl shadow-[0px_10px_30px_rgba(0,0,0,0.5)]">
+<div class="flex items-center justify-between px-6 py-4 w-full">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-amber-400" data-icon="auto_awesome">auto_awesome</span>
+<h1 class="font-headline text-xl tracking-tighter text-amber-400">Enchanted Realm</h1>
+</div>
+<div class="flex items-center gap-4">
+<button class="text-neutral-400 hover:text-amber-200 transition-colors">
+<span class="material-symbols-outlined" data-icon="search">search</span>
+</button>
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center overflow-hidden border border-outline-variant/15">
+<img alt="Profile" class="w-full h-full object-cover" data-alt="Close up portrait of a scholar in dimly lit library, warm orange highlights on face, cinematic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0A2nIQGYPhvYimsd15_2whZBZY4CqDWhu81IRX6hi8lIYYHsZ2B2oZELoOQM1ZCMAWdP23nPsTp7RM4rtlzHPPF56DgF9U6Re8l8FL6u7_9jmV17fJBbBX670ldBgX8jW5xDN6tEqiqTqNMsXYnII85TLH_9nfNzhjZnpY41JLGRrHkS4CTa4-e_qQnSfS9SpUD8-7c-6bCsuUrN3OYCbvYXnfcDUJIbYJ52R_MBjNAXtv44RxiLahproWub76drJ6DTGCyjzcl4"/>
+</div>
+</div>
+</div>
+</header>
+<main class="pt-24 px-6 max-w-6xl mx-auto">
+<!-- Hero / CTA Section -->
+<section class="mb-12 relative overflow-hidden rounded-xl bg-surface-container-lowest p-8 flex flex-col md:flex-row items-center gap-8">
+<div class="flex-1 z-10 text-center md:text-left">
+<span class="font-label text-[10px] uppercase tracking-[0.2em] text-secondary mb-3 block">Master of the Weave</span>
+<h2 class="font-headline text-4xl md:text-5xl mb-4 text-on-surface">Your Grimoire Awaits</h2>
+<p class="text-on-surface-variant max-w-md mb-8 font-body">Craft new worlds and summon your companions. Every legend begins with a single scroll.</p>
+<button class="bg-arcane-gradient text-on-primary font-label text-sm font-bold py-4 px-8 rounded-xl shadow-lg hover:shadow-primary/20 transition-all flex items-center justify-center gap-3 w-full md:w-auto">
+<span class="material-symbols-outlined" data-icon="add_circle">add_circle</span>
+                    CREATE CAMPAIGN
+                </button>
+</div>
+<div class="flex-1 relative w-full h-64 md:h-80 rounded-xl overflow-hidden shadow-2xl">
+<img alt="Arcane Workspace" class="w-full h-full object-cover opacity-60 mix-blend-lighten" data-alt="Top down view of an antique wooden desk with parchment maps, glowing crystals, an inkwell, and mysterious leather bound books" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRoAgyEH8wcl5BLWhhQ8zU4qyiZyQnF7v2GCWrF5wzlhmYnunqU6wqsyzu_ZH_f8msZVvzRvxM4xN-Oe8RyT3RI43xI8kN1euB_WYNq_uM07DNlKCS5fsF0-1BAyEaxPOj5l_cmtd-e1uOzp2R96zOAo4_Pxxy9QmUxWyVBdgq4rPN-ZtoH0BWoUGqtguodn7tNeVh1Vy7hjxihVfIE1uv9O9blAYiBNjNNexfC4y7seZM-hU6Lwa16gJgs1XAEUD_oS67Q6GaBZc"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent"></div>
+</div>
+</section>
+<!-- Stats Grid (Bento Style) -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+<div class="md:col-span-2 bg-surface-container-low rounded-xl p-6 flex flex-col justify-between border-l-2 border-primary/20">
+<div class="flex justify-between items-start mb-4">
+<h3 class="font-headline text-2xl">Active Rituals</h3>
+<span class="material-symbols-outlined text-primary/40" data-icon="history_edu">history_edu</span>
+</div>
+<div class="flex gap-4 items-end">
+<span class="text-5xl font-headline text-primary">04</span>
+<span class="font-label text-xs pb-2 text-on-surface-variant">CURRENT CAMPAIGNS</span>
+</div>
+</div>
+<div class="bg-surface-container-high rounded-xl p-6 flex flex-col justify-between relative overflow-hidden">
+<div class="z-10">
+<h3 class="font-headline text-xl mb-2 text-secondary">Summoning Focus</h3>
+<p class="text-xs text-on-surface-variant font-body">2 players awaiting acceptance in 'Storm King's Thunder'</p>
+</div>
+<div class="absolute -right-4 -bottom-4 opacity-10">
+<span class="material-symbols-outlined text-8xl" data-icon="auto_fix_high">auto_fix_high</span>
+</div>
+</div>
+</div>
+<!-- Campaign List -->
+<div class="mb-8 flex items-center justify-between">
+<h2 class="font-headline text-2xl tracking-wide">Ongoing Chronicles</h2>
+<div class="flex gap-2">
+<button class="p-2 text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined" data-icon="filter_list">filter_list</span></button>
+<button class="p-2 text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined" data-icon="grid_view">grid_view</span></button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+<!-- Campaign Card 1 -->
+<div class="group bg-surface-container-low rounded-xl overflow-hidden hover:translate-y-[-4px] transition-all duration-300 shadow-xl border-b-2 border-transparent hover:border-primary/40">
+<div class="h-40 relative">
+<img alt="Curse of Strahd" class="w-full h-full object-cover grayscale-[40%] group-hover:grayscale-0 transition-all duration-500" data-alt="Dark gothic castle perched on a rocky cliff under a stormy blood-red moon with misty valley below" src="https://lh3.googleusercontent.com/aida-public/AB6AXuChkalKP_7hvVQE9K5QRQ_unalGmmaocWqS9kuoDeMhdcSF1ySsxRCGa8gfIDxGdUoKx6uhnYT2yiOgi8VW9PucDG9UNE82rxlLeDzUutpZJBWk892TKjCJraGuyBuRo9ELo9jr8aES9bGKfttHR4OEk0tCBg7waElLxZC3H-pVIjzJzQF8GcAog1dKmPMKBD5Wk2SG-bWwl3rSm5jqqI477BlDo0V7_F8CFJMKn4Sf3K60nBfSDrHegrENPdG6TdvmjHhPcangMgU"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low to-transparent"></div>
+<div class="absolute top-4 right-4 glass-panel px-3 py-1 rounded-full border border-outline-variant/15 flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary shadow-[0_0_8px_#46eaed]"></span>
+<span class="font-label text-[10px] text-on-surface">Familiar Active</span>
+</div>
+</div>
+<div class="p-6">
+<h3 class="font-headline text-2xl mb-2 group-hover:text-primary transition-colors">Curse of Strahd</h3>
+<div class="flex items-center gap-6 mb-6">
+<div class="flex flex-col">
+<span class="font-label text-[9px] uppercase tracking-wider text-on-surface-variant mb-1">Dungeon Master</span>
+<span class="text-sm font-body font-medium">Archmage Malakai</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label text-[9px] uppercase tracking-wider text-on-surface-variant mb-1">Adventurers</span>
+<span class="text-sm font-body font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-xs" data-icon="group">group</span>
+                                5 Players
+                            </span>
+</div>
+</div>
+<button class="w-full py-3 bg-surface-container-high hover:bg-surface-container-highest rounded-lg font-label text-xs tracking-[0.1em] transition-colors border border-outline-variant/10">
+                        OPEN CHRONICLE
+                    </button>
+</div>
+</div>
+<!-- Campaign Card 2 -->
+<div class="group bg-surface-container-low rounded-xl overflow-hidden hover:translate-y-[-4px] transition-all duration-300 shadow-xl border-b-2 border-transparent hover:border-primary/40">
+<div class="h-40 relative">
+<img alt="Storm King's Thunder" class="w-full h-full object-cover grayscale-[40%] group-hover:grayscale-0 transition-all duration-500" data-alt="Massive snow-capped mountain peaks piercing through dense clouds with epic high fantasy scale and cold blue tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkVGwyesdG8bf9fLDisa8A1PMq4xg2Z2ToxtDRB6Q4r6ymTr22GyLEMKS6icETgtfvW_towOTL4Bw9B5V7caOIx9CAedo11o2-6RyFruMqFB5BRI312U76IIg0fwyFKEXyzyzz3WyhE-WkgFRniCdLd8Nxve3JisM0HAFnqY1tOnpbwYJjPZklaNA_Oa4Gst10mK7XWi9tbVog69o25-4S4nXXPKrqZYM7mzbnIrW4PAak1PHJiR9GHIKWMMmlrCCt-xxqVIGnT1c"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low to-transparent"></div>
+<div class="absolute top-4 right-4 glass-panel px-3 py-1 rounded-full border border-outline-variant/15 flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary shadow-[0_0_8px_#e9c400]"></span>
+<span class="font-label text-[10px] text-on-surface">Summoning Required</span>
+</div>
+</div>
+<div class="p-6">
+<h3 class="font-headline text-2xl mb-2 group-hover:text-primary transition-colors">Storm King's Thunder</h3>
+<div class="flex items-center gap-6 mb-6">
+<div class="flex flex-col">
+<span class="font-label text-[9px] uppercase tracking-wider text-on-surface-variant mb-1">Dungeon Master</span>
+<span class="text-sm font-body font-medium">Lady Gwendolyn</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label text-[9px] uppercase tracking-wider text-on-surface-variant mb-1">Adventurers</span>
+<span class="text-sm font-body font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-xs" data-icon="group">group</span>
+                                3 Players
+                            </span>
+</div>
+</div>
+<button class="w-full py-3 bg-surface-container-high hover:bg-surface-container-highest rounded-lg font-label text-xs tracking-[0.1em] transition-colors border border-outline-variant/10">
+                        RESPOND TO SUMMONS
+                    </button>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 w-full z-50 bg-neutral-950 rounded-t-xl shadow-[0px_-10px_40px_rgba(0,0,0,0.4)]">
+<div class="flex justify-around items-center px-4 py-3 pb-safe">
+<!-- Active Tab: Campaigns -->
+<a class="flex flex-col items-center justify-center bg-amber-400/10 text-amber-400 rounded-lg p-2 transition-all" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="auto_stories" style="font-variation-settings: 'FILL' 1;">auto_stories</span>
+<span class="font-sans text-[10px] uppercase tracking-[0.05em]">Campaigns</span>
+</a>
+<!-- Inactive Tab: Familiar -->
+<a class="flex flex-col items-center justify-center text-neutral-500 p-2 hover:bg-neutral-800 transition-all scale-95 active:scale-90" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="auto_fix_high">auto_fix_high</span>
+<span class="font-sans text-[10px] uppercase tracking-[0.05em]">Familiar</span>
+</a>
+<!-- Inactive Tab: Profile -->
+<a class="flex flex-col items-center justify-center text-neutral-500 p-2 hover:bg-neutral-800 transition-all scale-95 active:scale-90" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="settings">settings</span>
+<span class="font-sans text-[10px] uppercase tracking-[0.05em]">Profile</span>
+</a>
+</div>
+</nav>
+</body></html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-low": "#1c1b1b",
+                    "surface-bright": "#393939",
+                    "secondary-fixed-dim": "#2ddbde",
+                    "outline-variant": "#49454e",
+                    "error-container": "#93000a",
+                    "on-secondary-fixed-variant": "#004f51",
+                    "surface-dim": "#131313",
+                    "secondary-container": "#00cdd0",
+                    "surface-tint": "#e9c400",
+                    "on-error": "#690005",
+                    "tertiary-fixed-dim": "#c8c8b0",
+                    "secondary-fixed": "#5af8fb",
+                    "tertiary": "#c8c8b0",
+                    "on-primary-fixed-variant": "#544600",
+                    "secondary": "#46eaed",
+                    "error": "#ffb4ab",
+                    "background": "#131313",
+                    "primary": "#e9c400",
+                    "on-secondary": "#003738",
+                    "on-tertiary-fixed": "#1b1d0e",
+                    "primary-fixed-dim": "#e9c400",
+                    "on-error-container": "#ffdad6",
+                    "on-tertiary-container": "#8d8e79",
+                    "surface-container-high": "#2a2a2a",
+                    "surface-container-lowest": "#0e0e0e",
+                    "on-secondary-container": "#005253",
+                    "on-tertiary": "#303221",
+                    "surface-container": "#201f1f",
+                    "surface-container-highest": "#353534",
+                    "outline": "#948e99",
+                    "inverse-primary": "#705d00",
+                    "on-surface": "#e5e2e1",
+                    "on-secondary-fixed": "#002020",
+                    "primary-container": "#2e2500",
+                    "on-primary-fixed": "#221b00",
+                    "surface-variant": "#353534",
+                    "surface": "#131313",
+                    "primary-fixed": "#ffe16d",
+                    "on-primary": "#3a3000",
+                    "on-background": "#e5e2e1",
+                    "on-surface-variant": "#cbc4d0",
+                    "tertiary-container": "#252717",
+                    "inverse-surface": "#e5e2e1",
+                    "on-tertiary-fixed-variant": "#474836",
+                    "on-primary-container": "#a58b00",
+                    "inverse-on-surface": "#313030",
+                    "tertiary-fixed": "#e4e4cc"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Newsreader", "serif"],
+                    "body": ["Inter", "sans-serif"],
+                    "label": ["Inter", "sans-serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { background-color: #131313; color: #e5e2e1; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .arcane-glow { box-shadow: 0 0 40px rgba(233, 196, 0, 0.15); }
+        .orb-pulse { background: radial-gradient(circle, #e9c400 0%, #a58b00 100%); }
+        .glass-panel { backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); }
+        .scrollbar-hide::-webkit-scrollbar { display: none; }
+        .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-body selection:bg-primary/30 selection:text-primary overflow-hidden">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-neutral-950/80 backdrop-blur-xl flex items-center justify-between px-6 py-4 w-full shadow-[0px_10px_30px_rgba(0,0,0,0.5)]">
+<div class="flex items-center gap-4">
+<button class="text-neutral-400 hover:text-amber-200 transition-colors duration-300 ease-in-out">
+<span class="material-symbols-outlined" data-icon="arrow_back">arrow_back</span>
+</button>
+<h1 class="font-serif tracking-wide text-neutral-200 text-amber-400">Enchanted Realm</h1>
+</div>
+<div class="font-serif text-xl tracking-tighter text-amber-400">Familiar</div>
+</header>
+<!-- Main Content: Summoning Flow -->
+<main class="relative h-screen pt-20 pb-32 flex flex-col items-center overflow-hidden">
+<!-- Background Ambient Sigil -->
+<div class="absolute inset-0 z-0 flex items-center justify-center opacity-10 pointer-events-none">
+<img class="w-[80%] max-w-lg animate-pulse" data-alt="large mystical geometric sigil with intricate patterns glowing faintly in golden hue against dark background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzhunobQBsytoIJ_IY-MJH9_Efd1fi6f4nZfeu_wdefpV3hRTiRETit05DOxJkuIZ3vegqQhAIPzrdMFNK_kryjH9ATPApAlsah_aq95EvaYgUUc6BzdwFeYgP0svoTcqP4pHiUcrjjEEA7aVQoniphrpDNZz5U8cNDAtOgubaKSl0o_VHXlSJDAnWA_tcuzt4Q_OEo2joFeubN_KWPsMm9Fnv7CTPUr-GYUMYm8yuXxt3zlQYtGkZpMGpkz18UjTDJxLAz1q2eEQ"/>
+</div>
+<div class="relative z-10 w-full max-w-2xl px-6 flex flex-col h-full overflow-y-auto scrollbar-hide">
+<!-- AI Archetype Visualization (Ethereal Orb) -->
+<div class="flex flex-col items-center py-12">
+<div class="relative">
+<div class="w-24 h-24 rounded-full orb-pulse arcane-glow flex items-center justify-center shadow-[0_0_60px_rgba(233,196,0,0.4)]">
+<span class="material-symbols-outlined text-on-primary text-4xl" data-icon="auto_awesome">auto_awesome</span>
+</div>
+<!-- Orbiting Glyphs -->
+<div class="absolute -inset-4 border border-primary/20 rounded-full animate-[spin_10s_linear_infinite]"></div>
+<div class="absolute -inset-8 border border-secondary/10 rounded-full animate-[spin_15s_linear_infinite_reverse]"></div>
+</div>
+<div class="mt-6 text-center">
+<span class="font-label text-[10px] uppercase tracking-[0.2em] text-primary/60">Archetype</span>
+<h2 class="font-headline text-2xl text-on-surface italic">The Eternal Scholar</h2>
+</div>
+</div>
+<!-- Chat Container -->
+<div class="space-y-8 mb-12">
+<!-- AI Message -->
+<div class="flex flex-col items-start gap-3">
+<div class="bg-surface-container-high glass-panel rounded-xl p-6 shadow-2xl relative border-l border-primary/30">
+<p class="font-headline text-lg leading-relaxed text-on-surface">
+                            "The thread of your intent vibrates with potential, seeker. To tether a spirit from the Aether, we must first determine the vessel—the physical form through which their wisdom shall manifest."
+                        </p>
+<div class="mt-4 flex items-center gap-2">
+<span class="h-px w-8 bg-primary/40"></span>
+<p class="font-label text-[10px] uppercase tracking-[0.1em] text-on-tertiary-container">Consulting the Lexicon of Spirits</p>
+</div>
+</div>
+</div>
+<!-- Stage Indicator -->
+<div class="flex justify-center">
+<div class="px-4 py-1 rounded-full bg-surface-container-lowest border border-outline-variant/15 flex items-center gap-4">
+<span class="w-2 h-2 rounded-full bg-primary/20"></span>
+<span class="font-label text-[10px] uppercase tracking-widest text-primary">Stage II: Species Selection</span>
+<span class="w-2 h-2 rounded-full bg-primary/20"></span>
+</div>
+</div>
+<!-- Options / Suggested Paths -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<!-- Option 1 -->
+<button class="group flex flex-col items-center bg-surface-container-lowest hover:bg-surface-container-low transition-all duration-300 rounded-xl p-6 border border-outline-variant/10 hover:border-primary/40 active:scale-95">
+<div class="w-12 h-12 mb-4 flex items-center justify-center rounded-full bg-surface-container-high group-hover:bg-primary/10 transition-colors">
+<span class="material-symbols-outlined text-primary" data-icon="auto_stories">auto_stories</span>
+</div>
+<h3 class="font-headline text-lg text-on-surface group-hover:text-primary transition-colors">A wisened owl</h3>
+<p class="text-[10px] uppercase tracking-tighter text-on-surface-variant mt-2 text-center">Guardian of hidden libraries</p>
+</button>
+<!-- Option 2 -->
+<button class="group flex flex-col items-center bg-surface-container-lowest hover:bg-surface-container-low transition-all duration-300 rounded-xl p-6 border border-outline-variant/10 hover:border-secondary/40 active:scale-95">
+<div class="w-12 h-12 mb-4 flex items-center justify-center rounded-full bg-surface-container-high group-hover:bg-secondary/10 transition-colors">
+<span class="material-symbols-outlined text-secondary" data-icon="magic_button">magic_button</span>
+</div>
+<h3 class="font-headline text-lg text-on-surface group-hover:text-secondary transition-colors">A mischievous imp</h3>
+<p class="text-[10px] uppercase tracking-tighter text-on-surface-variant mt-2 text-center">Chaos in a small frame</p>
+</button>
+<!-- Option 3 -->
+<button class="group flex flex-col items-center bg-surface-container-lowest hover:bg-surface-container-low transition-all duration-300 rounded-xl p-6 border border-outline-variant/10 hover:border-tertiary/40 active:scale-95">
+<div class="w-12 h-12 mb-4 flex items-center justify-center rounded-full bg-surface-container-high group-hover:bg-tertiary/10 transition-colors">
+<span class="material-symbols-outlined text-tertiary" data-icon="raven">raven</span>
+</div>
+<h3 class="font-headline text-lg text-on-surface group-hover:text-tertiary transition-colors">A sleek raven</h3>
+<p class="text-[10px] uppercase tracking-tighter text-on-surface-variant mt-2 text-center">Shadowed messenger of fates</p>
+</button>
+</div>
+<!-- Card Detail (Asymmetric Element) -->
+<div class="mt-8 grid grid-cols-5 gap-4">
+<div class="col-span-3 bg-surface-container-high rounded-xl p-6 flex items-start gap-4 shadow-xl">
+<img class="w-16 h-16 rounded-lg object-cover border border-primary/20" data-alt="close up of an ancient leather bound book with gold leaf embossing resting on a dark velvet cloth" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhGOzBXNn24q0OJoW-O3ERP8nB1ypkOHEIZSVPJGrojnGvBtJM9gH1v21bH6Rt4xbmyJurVH9GtwEGUrPmoWjeLq-0h79VSeZclqI2SybkHJj3AieUoDaaitCqEj1FF1cyhY_lfjbRHftXPYBBVMEwdnFNLq8rbzxXM21jmGm6TGYfel-nx7FMKINFkbBbMc6SjzOuBX3va1eOinCdrwvg3RqMDfBKC0m4n0dUmCtsq73G88tGDzgVXUgswwhdO1AMSIzPGBaEPzk"/>
+<div>
+<span class="font-label text-[9px] text-primary uppercase tracking-[0.2em]">Grimoire Insight</span>
+<h4 class="font-headline text-lg text-on-surface mt-1">Spiritual Resonance</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">Each form alters the flavor of magical counsel. Birds tend toward clairvoyance, while fey creatures favor illusion.</p>
+</div>
+</div>
+<div class="col-span-2 bg-primary/5 rounded-xl border border-primary/10 flex flex-col items-center justify-center p-4">
+<div class="text-4xl text-primary/40 font-serif">78%</div>
+<div class="font-label text-[8px] uppercase tracking-widest text-on-surface-variant mt-2">Bond Likelihood</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 w-full z-50 rounded-t-xl bg-neutral-950 flex justify-around items-center px-4 py-3 pb-safe shadow-[0px_-10px_40px_rgba(0,0,0,0.4)]">
+<!-- Campaigns -->
+<a class="flex flex-col items-center justify-center text-neutral-500 p-2 hover:bg-neutral-800 transition-all scale-95 active:scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined" data-icon="auto_stories">auto_stories</span>
+<span class="font-sans text-[10px] uppercase tracking-[0.05em] mt-1">Campaigns</span>
+</a>
+<!-- Familiar (Active) -->
+<a class="flex flex-col items-center justify-center bg-amber-400/10 text-amber-400 rounded-lg p-2 scale-95 active:scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined" data-icon="auto_fix_high" style="font-variation-settings: 'FILL' 1;">auto_fix_high</span>
+<span class="font-sans text-[10px] uppercase tracking-[0.05em] mt-1">Familiar</span>
+</a>
+<!-- Profile -->
+<a class="flex flex-col items-center justify-center text-neutral-500 p-2 hover:bg-neutral-800 transition-all scale-95 active:scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+<span class="font-sans text-[10px] uppercase tracking-[0.05em] mt-1">Profile</span>
+</a>
+</nav>
+<!-- Input Bar (Floating over the Nav for Chat context) -->
+<div class="fixed bottom-24 left-0 w-full px-6 flex justify-center z-40">
+<div class="w-full max-w-xl bg-surface-container-lowest border border-outline-variant/15 rounded-full px-6 py-3 flex items-center gap-4 shadow-2xl glass-panel">
+<span class="material-symbols-outlined text-on-tertiary-container" data-icon="edit_note">edit_note</span>
+<input class="bg-transparent border-none focus:ring-0 w-full text-on-surface placeholder:text-neutral-600 font-headline text-lg" placeholder="Whisper your choice..." type="text"/>
+<button class="bg-primary text-on-primary p-2 rounded-full hover:shadow-[0_0_15px_rgba(233,196,0,0.5)] transition-all">
+<span class="material-symbols-outlined" data-icon="arrow_upward">arrow_upward</span>
+</button>
+</div>
+</div>
+</body></html>
