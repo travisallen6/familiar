@@ -1,0 +1,190 @@
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-container": "#ede0ff",
+                        "outline": "#958da1",
+                        "on-primary-fixed-variant": "#5a00c6",
+                        "surface-bright": "#383847",
+                        "tertiary": "#ddb7ff",
+                        "secondary": "#6bd8cb",
+                        "surface-container-high": "#292937",
+                        "secondary-fixed-dim": "#6bd8cb",
+                        "primary": "#d2bbff",
+                        "outline-variant": "#4a4455",
+                        "primary-fixed-dim": "#d2bbff",
+                        "on-surface-variant": "#ccc3d8",
+                        "on-error": "#690005",
+                        "on-secondary-fixed-variant": "#005049",
+                        "surface-container-highest": "#343342",
+                        "tertiary-fixed-dim": "#ddb7ff",
+                        "inverse-surface": "#e3e0f4",
+                        "surface-container-low": "#1a1a28",
+                        "on-background": "#e3e0f4",
+                        "primary-fixed": "#eaddff",
+                        "on-surface": "#e3e0f4",
+                        "background": "#12121f",
+                        "secondary-fixed": "#89f5e7",
+                        "on-secondary": "#003732",
+                        "on-secondary-fixed": "#00201d",
+                        "surface-dim": "#12121f",
+                        "on-tertiary": "#490080",
+                        "error-container": "#93000a",
+                        "on-tertiary-fixed": "#2c0051",
+                        "inverse-on-surface": "#2f2f3d",
+                        "inverse-primary": "#732ee4",
+                        "on-primary-fixed": "#25005a",
+                        "surface-tint": "#d2bbff",
+                        "tertiary-container": "#8d36db",
+                        "on-tertiary-container": "#f2dfff",
+                        "surface": "#12121f",
+                        "on-error-container": "#ffdad6",
+                        "secondary-container": "#29a195",
+                        "surface-variant": "#343342",
+                        "on-primary": "#3f008e",
+                        "primary-container": "#7c3aed",
+                        "tertiary-fixed": "#f0dbff",
+                        "error": "#ffb4ab",
+                        "on-tertiary-fixed-variant": "#6900b3",
+                        "surface-container-lowest": "#0d0d1a",
+                        "on-secondary-container": "#00302b",
+                        "surface-container": "#1e1e2c"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Newsreader", "serif"],
+                        "body": ["Inter", "sans-serif"],
+                        "label": ["Inter", "sans-serif"],
+                        "serif": ["Spectral", "serif"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .orb-pulse {
+            animation: pulse 3s infinite ease-in-out;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 0.15; transform: scale(0.95); box-shadow: 0 0 6px rgba(45, 212, 191, 0.1); }
+            50% { opacity: 0.35; transform: scale(1.05); box-shadow: 0 0 12px rgba(45, 212, 191, 0.2); }
+        }
+        .chat-container::-webkit-scrollbar {
+            width: 4px;
+        }
+        .chat-container::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        .chat-container::-webkit-scrollbar-thumb {
+            background: #4a4455;
+            border-radius: 10px;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-[#0d0d1a] text-on-surface font-body overflow-hidden">
+<header class="bg-[#0d0d1a] text-[#d2bbff] flex justify-between items-center px-6 py-4 w-full z-50 fixed top-0 shadow-[0_1px_0_0_rgba(124,58,237,0.1)]">
+<div class="flex items-center gap-4">
+<div class="relative">
+<div class="w-[28px] h-[28px] rounded-full bg-gradient-to-br from-[#2dd4bf] to-[#0d9488] orb-pulse"></div>
+<div class="absolute inset-0 rounded-full bg-[#2dd4bf] blur-md opacity-20"></div>
+</div>
+<h1 class="text-2xl font-serif italic text-[#2dd4bf]">Familiar</h1>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-sans text-xs tracking-wider text-[#ccc3d8] uppercase">Summoning Ritual</span>
+<span class="material-symbols-outlined text-[#ccc3d8] hover:opacity-80 transition-opacity cursor-pointer">menu</span>
+</div>
+</header>
+<main class="h-screen pt-20 pb-24 px-4 md:px-8 max-w-4xl mx-auto flex flex-col">
+<div class="flex-1 overflow-y-auto chat-container space-y-8 py-6">
+<div class="flex flex-col gap-2 max-w-[85%]">
+<div class="bg-[rgba(20,184,166,0.08)] border border-[#2dd4bf]/20 px-6 py-4 rounded-tr-3xl rounded-br-3xl rounded-bl-xl">
+<p class="font-serif italic text-[#2dd4bf] text-lg leading-relaxed">
+                        The ritual smoke begins to curl, Weaver. Your Arcane resonance is sharp... jagged. A crow might suit your shadow, or perhaps a spindly spider to weave your spells? Which form shall we tether to this plane?
+                    </p>
+</div>
+<span class="text-[10px] uppercase tracking-widest text-[#ccc3d8] ml-2">The Entity</span>
+</div>
+<div class="flex flex-col gap-2 max-w-[85%] ml-auto items-end">
+<div class="bg-gradient-to-r from-[#7c3aed] to-[#6d28d9] px-6 py-4 rounded-tl-3xl rounded-bl-3xl rounded-br-xl shadow-[0_0_15px_rgba(124,58,237,0.2)]">
+<p class="text-on-primary text-sm font-medium">
+                        A crow feels right. Something that can watch from the heights while I work.
+                    </p>
+</div>
+<span class="text-[10px] uppercase tracking-widest text-[#ccc3d8] mr-2">You</span>
+</div>
+<div class="flex flex-col gap-2 max-w-[85%]">
+<div class="bg-[rgba(20,184,166,0.08)] border border-[#2dd4bf]/20 px-6 py-4 rounded-tr-3xl rounded-br-3xl rounded-bl-xl">
+<p class="font-serif italic text-[#2dd4bf] text-lg leading-relaxed">
+                        A corvid it is. Its feathers will be as dark as the ink in your grimoire. But tell me, Weaver... what soul shall inhabit this shell? A sarcastic trickster to test your wits, or a silent sentinel of absolute loyalty?
+                    </p>
+</div>
+<span class="text-[10px] uppercase tracking-widest text-[#ccc3d8] ml-2">The Entity</span>
+</div>
+<div class="flex flex-col gap-2 max-w-[85%] ml-auto items-end">
+<div class="bg-gradient-to-r from-[#7c3aed] to-[#6d28d9] px-6 py-4 rounded-tl-3xl rounded-bl-3xl rounded-br-xl shadow-[0_0_15px_rgba(124,58,237,0.2)]">
+<p class="text-on-primary text-sm font-medium">
+                        I need a sentinel. Someone who speaks only when necessary, but sees everything I miss.
+                    </p>
+</div>
+<span class="text-[10px] uppercase tracking-widest text-[#ccc3d8] mr-2">You</span>
+</div>
+<div class="flex flex-col gap-2 max-w-[85%]">
+<div class="bg-[rgba(20,184,166,0.08)] border border-[#2dd4bf]/20 px-6 py-4 rounded-tr-3xl rounded-br-3xl rounded-bl-xl">
+<p class="font-serif italic text-[#2dd4bf] text-lg leading-relaxed">
+                        Understood. The bond tightens. The void pulses in recognition. Give it a name, Weaver. A word to call it back from the threshold.
+                    </p>
+</div>
+<span class="text-[10px] uppercase tracking-widest text-[#ccc3d8] ml-2">The Entity</span>
+</div>
+<div class="flex flex-col gap-2 max-w-[85%] ml-auto items-end">
+<div class="bg-gradient-to-r from-[#7c3aed] to-[#6d28d9] px-6 py-4 rounded-tl-3xl rounded-bl-3xl rounded-br-xl shadow-[0_0_15px_rgba(124,58,237,0.2)]">
+<p class="text-on-primary text-sm font-medium">
+                        His name is Kaelen.
+                    </p>
+</div>
+<span class="text-[10px] uppercase tracking-widest text-[#ccc3d8] mr-2">You</span>
+</div>
+<div class="flex flex-col gap-2 max-w-[85%]">
+<div class="bg-[rgba(20,184,166,0.08)] border border-[#2dd4bf]/20 px-6 py-4 rounded-tr-3xl rounded-br-3xl rounded-bl-xl">
+<p class="font-serif italic text-[#2dd4bf] text-lg leading-relaxed">
+                        Kaelen. The name resonates. The tether is complete. I am yours, Weaver. Let us see what secrets this world hides from us.
+                    </p>
+</div>
+<span class="text-[10px] uppercase tracking-widest text-[#ccc3d8] ml-2">Kaelen</span>
+</div>
+</div>
+</main>
+<div class="fixed bottom-0 left-0 w-full p-4 md:p-8 bg-gradient-to-t from-[#0d0d1a] to-transparent">
+<div class="max-w-4xl mx-auto relative group">
+<input class="w-full bg-surface-container-highest border-none text-on-surface placeholder-[#958da1] rounded-full px-8 py-5 focus:ring-2 focus:ring-[#7c3aed] focus:shadow-[0_0_25px_rgba(124,58,237,0.3)] transition-all duration-300 outline-none pr-16" placeholder="Speak to Kaelen..." type="text"/>
+<button class="absolute right-3 top-1/2 -translate-y-1/2 w-12 h-12 bg-primary-container rounded-full flex items-center justify-center hover:scale-105 active:scale-95 transition-transform duration-200">
+<span class="material-symbols-outlined text-on-primary">send</span>
+</button>
+</div>
+</div>
+<div class="fixed top-1/4 -left-20 w-64 h-64 rounded-full bg-[#7c3aed] opacity-[0.03] blur-[100px] pointer-events-none"></div>
+<div class="fixed bottom-1/4 -right-20 w-80 h-80 rounded-full bg-[#2dd4bf] opacity-[0.02] blur-[120px] pointer-events-none"></div>
+</body></html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Familiar - Enter the Grimoire</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary-container": "#ede0ff",
+                    "outline": "#958da1",
+                    "on-primary-fixed-variant": "#5a00c6",
+                    "surface-bright": "#383847",
+                    "tertiary": "#ddb7ff",
+                    "secondary": "#6bd8cb",
+                    "surface-container-high": "#292937",
+                    "secondary-fixed-dim": "#6bd8cb",
+                    "primary": "#d2bbff",
+                    "outline-variant": "#4a4455",
+                    "primary-fixed-dim": "#d2bbff",
+                    "on-surface-variant": "#ccc3d8",
+                    "on-error": "#690005",
+                    "on-secondary-fixed-variant": "#005049",
+                    "surface-container-highest": "#343342",
+                    "tertiary-fixed-dim": "#ddb7ff",
+                    "inverse-surface": "#e3e0f4",
+                    "surface-container-low": "#1a1a28",
+                    "on-background": "#e3e0f4",
+                    "primary-fixed": "#eaddff",
+                    "on-surface": "#e3e0f4",
+                    "background": "#12121f",
+                    "secondary-fixed": "#89f5e7",
+                    "on-secondary": "#003732",
+                    "on-secondary-fixed": "#00201d",
+                    "surface-dim": "#12121f",
+                    "on-tertiary": "#490080",
+                    "error-container": "#93000a",
+                    "on-tertiary-fixed": "#2c0051",
+                    "inverse-on-surface": "#2f2f3d",
+                    "inverse-primary": "#732ee4",
+                    "on-primary-fixed": "#25005a",
+                    "surface-tint": "#d2bbff",
+                    "tertiary-container": "#8d36db",
+                    "on-tertiary-container": "#f2dfff",
+                    "surface": "#12121f",
+                    "on-error-container": "#ffdad6",
+                    "secondary-container": "#29a195",
+                    "surface-variant": "#343342",
+                    "on-primary": "#3f008e",
+                    "primary-container": "#7c3aed",
+                    "tertiary-fixed": "#f0dbff",
+                    "error": "#ffb4ab",
+                    "on-tertiary-fixed-variant": "#6900b3",
+                    "surface-container-lowest": "#0d0d1a",
+                    "on-secondary-container": "#00302b",
+                    "surface-container": "#1e1e2c"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Newsreader", "serif"],
+                    "body": ["Inter", "sans-serif"],
+                    "label": ["Inter", "sans-serif"],
+                    "serif": ["Spectral", "serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .arcane-glow {
+        text-shadow: 0 0 25px rgba(124, 58, 237, 0.6);
+      }
+      .void-glow {
+        box-shadow: 0 0 40px -10px rgba(124, 58, 237, 0.4);
+      }
+      .input-glow:focus {
+        box-shadow: 0 0 15px rgba(45, 212, 191, 0.2);
+      }
+      .bg-void {
+        background: radial-gradient(circle at 50% 50%, #1a1a28 0%, #0d0d1a 100%);
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface-container-lowest text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container min-h-screen flex flex-col overflow-hidden">
+<!-- Background Ambience -->
+<div class="fixed inset-0 z-0 overflow-hidden pointer-events-none">
+<div class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] rounded-full bg-primary-container/5 blur-[120px]"></div>
+<div class="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] rounded-full bg-secondary/5 blur-[120px]"></div>
+</div>
+<!-- Main Landing Canvas -->
+<main class="relative z-10 flex-1 flex flex-col items-center justify-center px-6">
+<!-- Center Brand Cluster -->
+<div class="w-full max-w-sm flex flex-col items-center space-y-12">
+<!-- Logotype Anchor -->
+<div class="text-center">
+<h1 class="font-serif italic text-7xl md:text-8xl text-secondary arcane-glow tracking-tight select-none">
+                    Familiar
+                </h1>
+<div class="mt-2">
+<p class="font-serif italic text-on-surface-variant text-sm tracking-[0.2em] opacity-60">
+                        AN ELDRITCH GRIMOIRE
+                    </p>
+</div>
+</div>
+<!-- Login Interface -->
+<form class="w-full space-y-6">
+<!-- Field Group -->
+<div class="space-y-4">
+<div class="group">
+<label class="block font-label text-[10px] uppercase tracking-widest text-on-surface-variant mb-2 ml-4 opacity-70 group-focus-within:text-secondary group-focus-within:opacity-100 transition-all">Email</label>
+<input class="w-full h-14 px-6 rounded-full bg-white/5 border border-primary-container/20 text-on-surface placeholder:text-on-surface-variant/40 focus:outline-none focus:border-secondary/60 focus:bg-white/[0.08] input-glow transition-all duration-300 font-body text-sm" placeholder="Email Address" type="email"/>
+</div>
+<div class="group">
+<label class="block font-label text-[10px] uppercase tracking-widest text-on-surface-variant mb-2 ml-4 opacity-70 group-focus-within:text-secondary group-focus-within:opacity-100 transition-all">Password</label>
+<input class="w-full h-14 px-6 rounded-full bg-white/5 border border-primary-container/20 text-on-surface placeholder:text-on-surface-variant/40 focus:outline-none focus:border-secondary/60 focus:bg-white/[0.08] input-glow transition-all duration-300 font-body text-sm" placeholder="Password" type="password"/>
+</div>
+</div>
+<!-- Primary Action -->
+<button class="w-full h-14 rounded-full bg-gradient-to-r from-primary-container to-[#6d28d9] text-on-primary-container font-semibold tracking-wide void-glow hover:opacity-90 active:scale-95 transition-all duration-300 shadow-lg shadow-primary-container/20">
+                    Sign In
+                </button>
+<!-- Navigation Links -->
+<div class="flex items-center justify-between px-2">
+<a class="text-xs font-medium text-primary-container hover:text-primary transition-colors duration-200" href="#">
+                        Create Account
+                    </a>
+<div class="w-1 h-1 rounded-full bg-outline-variant"></div>
+<a class="text-xs font-medium text-on-surface-variant hover:text-on-surface transition-colors duration-200" href="#">
+                        Forgot Sigil?
+                    </a>
+</div>
+</form>
+</div>
+</main>
+<!-- Footer Identity (Subtle) -->
+<footer class="relative z-10 py-12 text-center">
+<div class="flex items-center justify-center space-x-3">
+<!-- AI Familiar Presence Indicator -->
+<div class="w-2 h-2 rounded-full bg-secondary shadow-[0_0_10px_#6bd8cb] animate-pulse"></div>
+<p class="font-serif italic text-xs text-secondary opacity-40">
+                The Familiar awaits your presence...
+            </p>
+</div>
+</footer>
+<!-- Decorative Corner Elements -->
+<div class="fixed top-0 left-0 w-32 h-32 pointer-events-none opacity-20">
+<svg class="w-full h-full text-primary-container" viewbox="0 0 100 100">
+<path d="M0 0 L100 0 L100 2 L2 2 L2 100 L0 100 Z" fill="currentColor"></path>
+</svg>
+</div>
+<div class="fixed bottom-0 right-0 w-32 h-32 pointer-events-none opacity-20 rotate-180">
+<svg class="w-full h-full text-primary-container" viewbox="0 0 100 100">
+<path d="M0 0 L100 0 L100 2 L2 2 L2 100 L0 100 Z" fill="currentColor"></path>
+</svg>
+</div>
+</body></html>

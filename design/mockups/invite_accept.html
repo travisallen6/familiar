@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,700;1,400;1,700&amp;family=Inter:wght@300;400;500;600;700&amp;family=Newsreader:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-container": "#ede0ff",
+                        "outline": "#958da1",
+                        "on-primary-fixed-variant": "#5a00c6",
+                        "surface-bright": "#383847",
+                        "tertiary": "#ddb7ff",
+                        "secondary": "#6bd8cb",
+                        "surface-container-high": "#292937",
+                        "secondary-fixed-dim": "#6bd8cb",
+                        "primary": "#d2bbff",
+                        "outline-variant": "#4a4455",
+                        "primary-fixed-dim": "#d2bbff",
+                        "on-surface-variant": "#ccc3d8",
+                        "on-error": "#690005",
+                        "on-secondary-fixed-variant": "#005049",
+                        "surface-container-highest": "#343342",
+                        "tertiary-fixed-dim": "#ddb7ff",
+                        "inverse-surface": "#e3e0f4",
+                        "surface-container-low": "#1a1a28",
+                        "on-background": "#e3e0f4",
+                        "primary-fixed": "#eaddff",
+                        "on-surface": "#e3e0f4",
+                        "background": "#12121f",
+                        "secondary-fixed": "#89f5e7",
+                        "on-secondary": "#003732",
+                        "on-secondary-fixed": "#00201d",
+                        "surface-dim": "#12121f",
+                        "on-tertiary": "#490080",
+                        "error-container": "#93000a",
+                        "on-tertiary-fixed": "#2c0051",
+                        "inverse-on-surface": "#2f2f3d",
+                        "inverse-primary": "#732ee4",
+                        "on-primary-fixed": "#25005a",
+                        "surface-tint": "#d2bbff",
+                        "tertiary-container": "#8d36db",
+                        "on-tertiary-container": "#f2dfff",
+                        "surface": "#12121f",
+                        "on-error-container": "#ffdad6",
+                        "secondary-container": "#29a195",
+                        "surface-variant": "#343342",
+                        "on-primary": "#3f008e",
+                        "primary-container": "#7c3aed",
+                        "tertiary-fixed": "#f0dbff",
+                        "error": "#ffb4ab",
+                        "on-tertiary-fixed-variant": "#6900b3",
+                        "surface-container-lowest": "#0d0d1a",
+                        "on-secondary-container": "#00302b",
+                        "surface-container": "#1e1e2c"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Newsreader", "serif"],
+                        "body": ["Inter", "sans-serif"],
+                        "label": ["Inter", "sans-serif"],
+                        "serif": ["Spectral", "serif"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .arcane-glow {
+            box-shadow: 0 0 20px rgba(124, 58, 237, 0.15);
+        }
+        .void-pulse {
+            box-shadow: 0 0 40px rgba(45, 212, 191, 0.1);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface-container-lowest text-on-surface selection:bg-primary/30 selection:text-primary min-h-screen flex flex-col font-body antialiased overflow-x-hidden">
+<!-- Ambient Void Light -->
+<div class="fixed top-[-10%] left-[-10%] w-[50%] h-[50%] bg-primary-container/10 blur-[120px] rounded-full pointer-events-none z-0"></div>
+<div class="fixed bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-secondary/5 blur-[100px] rounded-full pointer-events-none z-0"></div>
+<!-- Navigation Shell Suppressed for focused Account Creation per Protocol -->
+<main class="relative z-10 flex-grow flex items-center justify-center px-6 py-12">
+<div class="max-w-xl w-full">
+<!-- Header Section -->
+<div class="text-center mb-12">
+<div class="inline-flex items-center justify-center mb-6">
+<div class="relative">
+<div class="w-24 h-24 rounded-full bg-gradient-to-tr from-secondary/40 to-primary-container/40 blur-xl absolute inset-0 animate-pulse"></div>
+<div class="w-24 h-24 rounded-full bg-surface-container-high flex items-center justify-center border border-secondary/20 relative z-10">
+<span class="material-symbols-outlined text-secondary text-5xl" data-icon="auto_awesome">auto_awesome</span>
+</div>
+</div>
+</div>
+<h1 class="font-serif italic text-4xl md:text-5xl text-secondary mb-3 tracking-tight">Your familiar awaits.</h1>
+<p class="text-on-surface-variant font-body text-lg max-w-sm mx-auto leading-relaxed">
+                    You have been summoned to join <span class="text-primary font-semibold italic">The Obsidian Spire</span> campaign by <span class="text-on-surface">Grandmaster Malakor</span>.
+                </p>
+</div>
+<!-- Account Creation Card -->
+<div class="bg-white/5 backdrop-blur-xl border border-outline-variant/20 rounded-[32px] p-8 md:p-10 shadow-2xl relative overflow-hidden">
+<!-- Subtle internal glow -->
+<div class="absolute -top-24 -right-24 w-48 h-48 bg-primary/5 blur-3xl rounded-full"></div>
+<div class="relative z-10 space-y-8">
+<div class="space-y-2">
+<h2 class="font-serif text-2xl text-on-surface">Bind your essence</h2>
+<p class="text-on-surface-variant text-sm font-label uppercase tracking-widest">Create your arcane identity</p>
+</div>
+<form class="space-y-6">
+<!-- Input Group -->
+<div class="space-y-4">
+<div class="relative group">
+<label class="absolute -top-2 left-6 px-2 bg-surface-container-low text-[10px] font-bold tracking-widest text-outline uppercase z-20">True Name</label>
+<input class="w-full bg-surface-container-highest/30 border border-outline-variant/30 text-on-surface placeholder:text-outline-variant/50 px-6 py-4 rounded-[20px] focus:ring-0 focus:border-secondary transition-all focus:bg-surface-container-highest/50 outline-none group-hover:border-outline-variant/60" placeholder="Enter your player name" type="text"/>
+</div>
+<div class="relative group">
+<label class="absolute -top-2 left-6 px-2 bg-surface-container-low text-[10px] font-bold tracking-widest text-outline uppercase z-20">Arcane Address</label>
+<input class="w-full bg-surface-container-highest/20 border border-outline-variant/10 text-on-surface-variant px-6 py-4 rounded-[20px] cursor-not-allowed italic" readonly="" type="email" value="player@ethereal.void"/>
+</div>
+<div class="relative group">
+<label class="absolute -top-2 left-6 px-2 bg-surface-container-low text-[10px] font-bold tracking-widest text-outline uppercase z-20">Secret Sigil</label>
+<input class="w-full bg-surface-container-highest/30 border border-outline-variant/30 text-on-surface placeholder:text-outline-variant/50 px-6 py-4 rounded-[20px] focus:ring-0 focus:border-secondary transition-all focus:bg-surface-container-highest/50 outline-none group-hover:border-outline-variant/60" placeholder="Choose a password" type="password"/>
+</div>
+</div>
+<!-- CTA Section -->
+<div class="pt-4 space-y-6">
+<button class="w-full bg-gradient-to-r from-primary-container to-tertiary-container text-on-primary-container font-semibold text-lg py-5 rounded-[20px] shadow-[0_0_20px_rgba(124,58,237,0.3)] hover:shadow-[0_0_30px_rgba(124,58,237,0.5)] transition-all active:scale-[0.98] flex items-center justify-center gap-3 group">
+<span>Manifest Existence</span>
+<span class="material-symbols-outlined text-xl transition-transform group-hover:translate-x-1" data-icon="east">east</span>
+</button>
+<p class="text-center text-on-surface-variant text-xs leading-relaxed max-w-xs mx-auto">
+                                By manifesting, you agree to the <span class="text-primary hover:underline cursor-pointer">Laws of the Void</span> and our <span class="text-primary hover:underline cursor-pointer">Privacy Scrolls</span>.
+                            </p>
+</div>
+</form>
+</div>
+</div>
+<!-- Footer Quote / Aesthetic Finish -->
+<div class="mt-12 text-center">
+<p class="font-serif italic text-outline text-lg">
+                    "Every journey begins with a single whisper into the dark."
+                </p>
+<div class="mt-6 flex justify-center gap-8">
+<img alt="A subtle background detail showing a faint glowing constellation map of a fictional sky with purple and teal stars" class="w-32 h-auto opacity-30 grayscale hover:grayscale-0 transition-all duration-700" data-alt="minimalist aesthetic illustration of a fictional constellation map with faint glowing purple lines on a black background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYQ-wYxZlkLnZeQsfzLr0ufkiWLqqyFQMfzdq5MiVG3DoqFgK3iiGjVOFMA37CSMb7fazfY8mbz8JBL6XDrySPjoBbKZt-0a5LLGdRX56BAmYo_nQfBLC6XmREhONhLk8kUeiADHLSTXOYtbhy4_haKnmRjj9HPwoqEs2kuiFzQ8zAgHBbjoooOqmuOkqs8AW9btPHly9Zo0udFF-_W2ncDTf94S15HwQ_C-3xf5LtSOSDfNdS7k9YFk4t3e26uTi81x0y668b3Sln"/>
+</div>
+</div>
+</div>
+</main>
+<!-- Contextual Element: The Familiar's Presence (Bottom) -->
+<div class="fixed bottom-8 left-1/2 -translate-x-1/2 z-20 pointer-events-none">
+<div class="flex flex-col items-center gap-2">
+<div class="w-3 h-3 rounded-full bg-secondary void-pulse animate-bounce"></div>
+<span class="font-serif italic text-secondary text-sm tracking-wide opacity-80">The Familiar is watching...</span>
+</div>
+</div>
+</body></html>

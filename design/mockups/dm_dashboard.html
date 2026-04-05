@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-container": "#ede0ff",
+                        "outline": "#958da1",
+                        "on-primary-fixed-variant": "#5a00c6",
+                        "surface-bright": "#383847",
+                        "tertiary": "#ddb7ff",
+                        "secondary": "#6bd8cb",
+                        "surface-container-high": "#292937",
+                        "secondary-fixed-dim": "#6bd8cb",
+                        "primary": "#d2bbff",
+                        "outline-variant": "#4a4455",
+                        "primary-fixed-dim": "#d2bbff",
+                        "on-surface-variant": "#ccc3d8",
+                        "on-error": "#690005",
+                        "on-secondary-fixed-variant": "#005049",
+                        "surface-container-highest": "#343342",
+                        "tertiary-fixed-dim": "#ddb7ff",
+                        "inverse-surface": "#e3e0f4",
+                        "surface-container-low": "#1a1a28",
+                        "on-background": "#e3e0f4",
+                        "primary-fixed": "#eaddff",
+                        "on-surface": "#e3e0f4",
+                        "background": "#12121f",
+                        "secondary-fixed": "#89f5e7",
+                        "on-secondary": "#003732",
+                        "on-secondary-fixed": "#00201d",
+                        "surface-dim": "#12121f",
+                        "on-tertiary": "#490080",
+                        "error-container": "#93000a",
+                        "on-tertiary-fixed": "#2c0051",
+                        "inverse-on-surface": "#2f2f3d",
+                        "inverse-primary": "#732ee4",
+                        "on-primary-fixed": "#25005a",
+                        "surface-tint": "#d2bbff",
+                        "tertiary-container": "#8d36db",
+                        "on-tertiary-container": "#f2dfff",
+                        "surface": "#12121f",
+                        "on-error-container": "#ffdad6",
+                        "secondary-container": "#29a195",
+                        "surface-variant": "#343342",
+                        "on-primary": "#3f008e",
+                        "primary-container": "#7c3aed",
+                        "tertiary-fixed": "#f0dbff",
+                        "error": "#ffb4ab",
+                        "on-tertiary-fixed-variant": "#6900b3",
+                        "surface-container-lowest": "#0d0d1a",
+                        "on-secondary-container": "#00302b",
+                        "surface-container": "#1e1e2c"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Newsreader", "serif"],
+                        "body": ["Inter", "sans-serif"],
+                        "label": ["Inter", "sans-serif"],
+                        "serif": ["Spectral", "serif"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.04);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(124, 58, 237, 0.1);
+        }
+        .arcane-glow {
+            box-shadow: 0 0 15px rgba(124, 58, 237, 0.3);
+        }
+        .void-gradient {
+            background: radial-gradient(circle at center, #2dd4bf 0%, transparent 70%);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface-container-lowest text-on-surface font-body min-h-screen selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<header class="bg-[#0d0d1a] fixed top-0 left-0 w-full z-50 flex justify-between items-center px-6 py-4 shadow-[0_1px_0_0_rgba(124,58,237,0.1)]">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full void-gradient flex items-center justify-center relative overflow-hidden" data-alt="Glowing teal radial-gradient orb representing the Familiar's essence in a dark void">
+<div class="absolute inset-0 opacity-40 blur-md bg-secondary"></div>
+</div>
+<h1 class="text-2xl font-serif italic text-[#2dd4bf]">Familiar</h1>
+</div>
+<div class="flex items-center gap-6">
+<button class="text-on-surface-variant hover:opacity-80 transition-opacity">
+<span class="material-symbols-outlined text-2xl">menu</span>
+</button>
+</div>
+</header>
+<!-- Sidebar / Navigation Drawer -->
+<aside class="fixed inset-y-0 left-0 z-[60] hidden md:flex flex-col p-8 w-80 bg-[#1a1a28] backdrop-blur-xl rounded-r-3xl shadow-[20px_0_40px_rgba(124,58,237,0.06)]">
+<div class="mb-12 flex flex-col gap-2">
+<div class="flex items-center gap-3 mb-6">
+<div class="w-12 h-12 rounded-full bg-surface-container-highest border border-outline-variant/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">auto_stories</span>
+</div>
+<div>
+<h2 class="font-serif text-lg text-primary">The Grimoire</h2>
+<p class="text-[10px] uppercase tracking-widest text-on-surface-variant italic">The Entity's Knowledge</p>
+</div>
+</div>
+</div>
+<nav class="flex flex-col gap-2 flex-grow">
+<a class="flex items-center gap-4 px-4 py-3 rounded-xl text-on-surface-variant hover:text-[#2dd4bf] hover:bg-white/5 transition-all" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="font-sans uppercase tracking-widest text-[10px]">Character</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-3 rounded-xl text-on-surface-variant hover:text-[#2dd4bf] hover:bg-white/5 transition-all" href="#">
+<span class="material-symbols-outlined">auto_stories</span>
+<span class="font-sans uppercase tracking-widest text-[10px]">Lore</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-3 rounded-xl text-on-surface-variant hover:text-[#2dd4bf] hover:bg-white/5 transition-all" href="#">
+<span class="material-symbols-outlined">description</span>
+<span class="font-sans uppercase tracking-widest text-[10px]">Notes</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-3 rounded-xl text-primary bg-white/5 font-bold border-l-2 border-primary-container translate-x-1 transition-all" href="#">
+<span class="material-symbols-outlined">map</span>
+<span class="font-sans uppercase tracking-widest text-[10px]">Campaign</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-3 rounded-xl text-on-surface-variant hover:text-[#2dd4bf] hover:bg-white/5 transition-all" href="#">
+<span class="material-symbols-outlined">settings</span>
+<span class="font-sans uppercase tracking-widest text-[10px]">Settings</span>
+</a>
+</nav>
+<div class="mt-auto pt-8 border-t border-outline-variant/10">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-xs text-on-primary">shield</span>
+</div>
+<p class="text-[10px] uppercase tracking-widest text-on-surface-variant">Active Campaign: Shadow of the Void</p>
+</div>
+</div>
+</aside>
+<!-- Main Canvas -->
+<main class="pt-24 pb-32 px-6 md:ml-80 min-h-screen">
+<div class="max-w-6xl mx-auto">
+<!-- Header Section -->
+<section class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+<div>
+<p class="text-secondary font-serif italic text-lg mb-2">Welcome back, Dungeon Master...</p>
+<h2 class="text-5xl md:text-6xl font-headline font-light tracking-tight text-on-surface">DM Dashboard</h2>
+</div>
+<button class="bg-gradient-to-r from-primary-container to-[#6d28d9] text-on-primary-container px-8 py-4 rounded-[20px] font-medium arcane-glow flex items-center gap-3 hover:opacity-90 active:scale-95 transition-all">
+<span class="material-symbols-outlined">add_circle</span>
+                    New Campaign
+                </button>
+</section>
+<!-- Stats Overview - Subtle Bento Layer -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-12">
+<div class="glass-card p-6 rounded-lg col-span-1 md:col-span-2 flex flex-col justify-between h-40">
+<span class="text-on-surface-variant text-[10px] uppercase tracking-widest">Total Active Players</span>
+<div class="flex items-baseline gap-2">
+<span class="text-4xl font-serif text-primary">24</span>
+<span class="text-secondary text-sm">Across 4 Worlds</span>
+</div>
+</div>
+<div class="glass-card p-6 rounded-lg flex flex-col justify-between h-40">
+<span class="text-on-surface-variant text-[10px] uppercase tracking-widest">Next Session</span>
+<div>
+<p class="text-lg font-serif">In 4 Hours</p>
+<p class="text-xs text-on-surface-variant italic">Shadow of the Void</p>
+</div>
+</div>
+<div class="glass-card p-6 rounded-lg flex flex-col justify-between h-40">
+<span class="text-on-surface-variant text-[10px] uppercase tracking-widest">Lore Entries</span>
+<div class="flex items-baseline gap-2">
+<span class="text-4xl font-serif text-secondary">142</span>
+</div>
+</div>
+</div>
+<!-- Campaigns Grid -->
+<h3 class="text-on-surface-variant text-[10px] uppercase tracking-widest mb-6 font-semibold">Current Campaigns</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Campaign Card 1 -->
+<div class="glass-card rounded-[8px] overflow-hidden group hover:border-primary/40 transition-all duration-500">
+<div class="h-32 bg-surface-container relative overflow-hidden">
+<img class="w-full h-full object-cover opacity-40 group-hover:scale-110 transition-transform duration-700" data-alt="Dark misty castle ruins atop a jagged cliffside under a blood-red moonlight atmospheric oil painting style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwfMawWVBkCiiEWoaYnKzDYwjnTycSoHsVs6xNOOjCWtvmS4uWvz0QqvMd-qA5vNMbAxY-cwRk5gjwii6wNNsDn8JMAkZCgvC-JShb4NwzKRWG6cVjrAQqLserpifqhtkqgqksqvKzv-IQnJjv3xFZWvhNXvuPlR6vBg9-S5VLzWcHMd2e9ebCnxDXJeBB4EEC_NtwW_8Sj_DLyvTlE5-CsmJ1MU80h6u-sQPyEAGqGthYI8sZSmMlUgha6KFlX_VdMtdtWUckVVY2"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low to-transparent"></div>
+</div>
+<div class="p-6">
+<h4 class="text-xl font-serif mb-2 text-on-surface group-hover:text-primary transition-colors">Shadow of the Void</h4>
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between text-xs text-on-surface-variant">
+<span class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">groups</span> 5 Players</span>
+<span class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">calendar_month</span> 2 days ago</span>
+</div>
+<div class="w-full bg-white/5 h-1 rounded-full overflow-hidden">
+<div class="bg-primary h-full w-[75%] shadow-[0_0_8px_#d2bbff]"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Campaign Card 2 -->
+<div class="glass-card rounded-[8px] overflow-hidden group hover:border-primary/40 transition-all duration-500">
+<div class="h-32 bg-surface-container relative overflow-hidden">
+<img class="w-full h-full object-cover opacity-40 group-hover:scale-110 transition-transform duration-700" data-alt="Deep subterranean crystal cavern with bioluminescent purple vines and ancient stone archways glowing softly" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjPtJgcX3SARG-mQ-tkPLSLKVQAh86F7RwRvPJyT_q_wXwGL7wmt2S8WAUiSUrzq_21wH5-XdDn3h7mQyXtmLQrPVtIxBnsMMUPbKEzuzAuAU6wcaC79bQCJwj6wI7e76lwUVXWIUqAGlLVZ7sy4dq5X31wSDYAoPBWArtHYve1JjhNQkxgUGMHiGUT_Bmgo-YdtD4QXfWh9KhLT13iaEgvWheIL31qpSbOQR1UHn7WApshi-jx8Y8fas_GTpZ0zdlvWDTKQr3ZFV7"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low to-transparent"></div>
+</div>
+<div class="p-6">
+<h4 class="text-xl font-serif mb-2 text-on-surface group-hover:text-primary transition-colors">The Emerald Labyrinth</h4>
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between text-xs text-on-surface-variant">
+<span class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">groups</span> 4 Players</span>
+<span class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">calendar_month</span> 1 week ago</span>
+</div>
+<div class="w-full bg-white/5 h-1 rounded-full overflow-hidden">
+<div class="bg-primary h-full w-[40%]"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Campaign Card 3 -->
+<div class="glass-card rounded-[8px] overflow-hidden group hover:border-primary/40 transition-all duration-500">
+<div class="h-32 bg-surface-container relative overflow-hidden">
+<img class="w-full h-full object-cover opacity-40 group-hover:scale-110 transition-transform duration-700" data-alt="Ancient floating library ruins among storm clouds with glowing ley lines and floating debris dark fantasy concept art" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6X_8Sd1QGf1XFNDnapPUj0PDGSTLi4lbihbvBaPodrp0hky9LKTJ3LvjCtcRjf9QPxYvcPdkj1bqHwVFsrLlUm2sxzE646CoF68yyuIQzqq6NedEMrw7i4h_nSp4ff-A_fCQGQ_zo9fGtutYqLDoh5p2prSy1YD8FtGJPP4SdUW3wpmh8gYA0ivc6VYQjVrW1LzXfjTOtezRDiMn_FTekdK5ky68JqQ90Hj1WZ2zYyIqu_hXyNiVI2NiCLgjGnhWnx79V-_63rJMq"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low to-transparent"></div>
+</div>
+<div class="p-6">
+<h4 class="text-xl font-serif mb-2 text-on-surface group-hover:text-primary transition-colors">Echoes of Aethelgard</h4>
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between text-xs text-on-surface-variant">
+<span class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">groups</span> 6 Players</span>
+<span class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">calendar_month</span> Yesterday</span>
+</div>
+<div class="w-full bg-white/5 h-1 rounded-full overflow-hidden">
+<div class="bg-primary h-full w-[92%] shadow-[0_0_8px_#d2bbff]"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- New Campaign Placeholder / CTA Card -->
+<button class="border-2 border-dashed border-outline-variant/30 rounded-[8px] p-6 flex flex-col items-center justify-center gap-4 min-h-[280px] hover:border-primary/60 hover:bg-white/5 transition-all group">
+<div class="w-16 h-16 rounded-full border border-outline-variant/30 flex items-center justify-center group-hover:scale-110 group-hover:border-primary transition-all">
+<span class="material-symbols-outlined text-3xl text-outline-variant group-hover:text-primary">add</span>
+</div>
+<span class="text-on-surface-variant font-serif group-hover:text-on-surface">Forge a New World</span>
+</button>
+</div>
+</div>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-12 py-4 bg-[#0d0d1a]/80 backdrop-blur-md border-t border-white/5 shadow-[0_-4px_24px_rgba(124,58,237,0.1)]">
+<a class="text-on-surface-variant p-3 hover:text-primary transition-all" href="#">
+<span class="material-symbols-outlined">chat</span>
+</a>
+<a class="text-primary bg-primary-container/20 rounded-full p-3 shadow-[0_0_15px_rgba(124,58,237,0.4)] scale-110 transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">dashboard</span>
+</a>
+<a class="text-on-surface-variant p-3 hover:text-primary transition-all" href="#">
+<span class="material-symbols-outlined">person</span>
+</a>
+</nav>
+<!-- Floating AI Prompt (The Familiar) -->
+<div class="fixed bottom-8 right-8 z-[70] hidden lg:block">
+<div class="flex items-center gap-4 bg-surface-container-high/60 backdrop-blur-md p-4 rounded-full arcane-glow border border-primary/20">
+<p class="text-on-surface font-serif italic text-sm pl-4 pr-2">"The winds of fate are shifting... shall we weave a new tale?"</p>
+<div class="w-12 h-12 rounded-full void-gradient flex items-center justify-center relative cursor-pointer group" data-alt="Glowing teal orb pulsing with energy">
+<span class="material-symbols-outlined text-on-surface group-hover:scale-125 transition-transform">bolt</span>
+<div class="absolute inset-0 rounded-full animate-pulse bg-secondary/20"></div>
+</div>
+</div>
+</div>
+</body></html>

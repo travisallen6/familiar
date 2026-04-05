@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-container": "#ede0ff",
+                        "outline": "#958da1",
+                        "on-primary-fixed-variant": "#5a00c6",
+                        "surface-bright": "#383847",
+                        "tertiary": "#ddb7ff",
+                        "secondary": "#6bd8cb",
+                        "surface-container-high": "#292937",
+                        "secondary-fixed-dim": "#6bd8cb",
+                        "primary": "#d2bbff",
+                        "outline-variant": "#4a4455",
+                        "primary-fixed-dim": "#d2bbff",
+                        "on-surface-variant": "#ccc3d8",
+                        "on-error": "#690005",
+                        "on-secondary-fixed-variant": "#005049",
+                        "surface-container-highest": "#343342",
+                        "tertiary-fixed-dim": "#ddb7ff",
+                        "inverse-surface": "#e3e0f4",
+                        "surface-container-low": "#1a1a28",
+                        "on-background": "#e3e0f4",
+                        "primary-fixed": "#eaddff",
+                        "on-surface": "#e3e0f4",
+                        "background": "#12121f",
+                        "secondary-fixed": "#89f5e7",
+                        "on-secondary": "#003732",
+                        "on-secondary-fixed": "#00201d",
+                        "surface-dim": "#12121f",
+                        "on-tertiary": "#490080",
+                        "error-container": "#93000a",
+                        "on-tertiary-fixed": "#2c0051",
+                        "inverse-on-surface": "#2f2f3d",
+                        "inverse-primary": "#732ee4",
+                        "on-primary-fixed": "#25005a",
+                        "surface-tint": "#d2bbff",
+                        "tertiary-container": "#8d36db",
+                        "on-tertiary-container": "#f2dfff",
+                        "surface": "#12121f",
+                        "on-error-container": "#ffdad6",
+                        "secondary-container": "#29a195",
+                        "surface-variant": "#343342",
+                        "on-primary": "#3f008e",
+                        "primary-container": "#7c3aed",
+                        "tertiary-fixed": "#f0dbff",
+                        "error": "#ffb4ab",
+                        "on-tertiary-fixed-variant": "#6900b3",
+                        "surface-container-lowest": "#0d0d1a",
+                        "on-secondary-container": "#00302b",
+                        "surface-container": "#1e1e2c"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Newsreader", "serif"],
+                        "body": ["Inter", "sans-serif"],
+                        "label": ["Inter", "sans-serif"],
+                        "serif": ["Spectral", "serif"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+        }
+        .arcane-glow {
+            box-shadow: 0 0 15px rgba(124, 58, 237, 0.4);
+        }
+        .void-orb {
+            background: radial-gradient(circle, #2dd4bf 0%, rgba(45, 212, 191, 0) 70%);
+        }
+        .glass-panel {
+            backdrop-filter: blur(12px);
+            background: rgba(26, 26, 40, 0.6);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface-container-lowest text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-6 py-4 bg-[#0d0d1a] shadow-[0_1px_0_0_rgba(124,58,237,0.1)]">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full void-orb flex items-center justify-center animate-pulse">
+<div class="w-4 h-4 rounded-full bg-secondary blur-[2px]"></div>
+</div>
+<h1 class="text-2xl font-serif italic text-secondary tracking-tight">Familiar</h1>
+</div>
+<button class="p-2 text-on-surface-variant hover:opacity-80 transition-opacity active:scale-95 duration-300">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</header>
+<!-- Main Chat Canvas -->
+<main class="min-h-screen pt-24 pb-32 px-4 md:px-8 max-w-4xl mx-auto flex flex-col gap-8">
+<!-- Timestamp/Section Anchor -->
+<div class="flex justify-center items-center gap-4 py-4">
+<div class="h-[1px] flex-1 bg-gradient-to-r from-transparent to-outline-variant/30"></div>
+<span class="text-[10px] font-label uppercase tracking-[0.2em] text-outline">The Third Watch</span>
+<div class="h-[1px] flex-1 bg-gradient-to-l from-transparent to-outline-variant/30"></div>
+</div>
+<!-- Familiar Message -->
+<div class="flex flex-col items-start max-w-[85%] md:max-w-[70%] group">
+<div class="flex items-center gap-2 mb-2 px-2">
+<span class="text-[10px] font-label uppercase tracking-widest text-secondary/60">The Entity</span>
+</div>
+<div class="p-5 rounded-2xl rounded-tl-none bg-[#14b8a6]/[0.08] border border-secondary/20 shadow-[0_4px_20px_rgba(45,212,191,0.05)]">
+<p class="font-serif italic text-lg leading-relaxed text-secondary">
+                    "The threads of your fate are fraying, seeker. I sense a presence in the obsidian halls—something older than the grimoire itself. Shall we weave a counter-spell, or wait for the shadow to reveal its face?"
+                </p>
+</div>
+</div>
+<!-- Player Message -->
+<div class="flex flex-col items-end self-end max-w-[85%] md:max-w-[70%]">
+<div class="flex items-center gap-2 mb-2 px-2">
+<span class="text-[10px] font-label uppercase tracking-widest text-primary/60">Novice Arcanist</span>
+</div>
+<div class="p-5 rounded-2xl rounded-tr-none bg-gradient-to-br from-primary-container to-[#6d28d9] text-on-primary-container shadow-[0_8px_32px_rgba(124,58,237,0.2)]">
+<p class="text-base font-medium leading-relaxed">
+                    Prepare the defensive circle. I'm not waiting for them to strike first. What materials do we need for the banishment rite?
+                </p>
+</div>
+</div>
+<!-- Familiar Message -->
+<div class="flex flex-col items-start max-w-[85%] md:max-w-[70%]">
+<div class="flex items-center gap-2 mb-2 px-2">
+<span class="text-[10px] font-label uppercase tracking-widest text-secondary/60">The Entity</span>
+</div>
+<div class="p-5 rounded-2xl rounded-tl-none bg-[#14b8a6]/[0.08] border border-secondary/20 glass-panel">
+<p class="font-serif italic text-lg leading-relaxed text-secondary">
+                    "A bold choice. You will need crushed lapis lazuli and the breath of a dying ember. Look within your notes; the ritual of the 'Seventh Seal' is what you seek."
+                </p>
+</div>
+<div class="mt-4 px-2">
+<img alt="Ancient Ritual" class="w-48 h-32 object-cover rounded-xl border border-secondary/20 grayscale hover:grayscale-0 transition-all duration-700" data-alt="An ancient mystical scroll with glowing teal runes and floating dust particles in a dark, candle-lit library setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHEKSPNCty3s8a7xwLjI-1BZEmE0POdwsTwJAVBVKqOx_g6aa1QKO9i7VF8h61WavvagIVCPYlQ-Ghl5yjtFlIWS_svDXCMze3l5MFJ5o5vnggPBlnGkiyoDmt-c1BmiPXn-UtmLCrE_-MDq40vENhzhuQGYhAg02MbgqQmxxU_QFndOllDzX-_wozlV4kbGHsdcDGF-D-QBLrR3Dmi7cKimwOVlghx_3RzKZLheVH4VCRasGh73NJKPSdTGYei6XFJM9pmtWEmnP6"/>
+</div>
+</div>
+<!-- Player Message -->
+<div class="flex flex-col items-end self-end max-w-[85%] md:max-w-[70%]">
+<div class="p-5 rounded-2xl rounded-tr-none bg-gradient-to-br from-primary-container to-[#6d28d9] text-on-primary-container shadow-[0_8px_32px_rgba(124,58,237,0.2)]">
+<p class="text-base font-medium leading-relaxed">
+                    I'll check the campaign map to see where we can find those ingredients. Stay vigilant.
+                </p>
+</div>
+</div>
+</main>
+<!-- Bottom Action Area -->
+<div class="fixed bottom-0 left-0 w-full z-40 px-6 py-6 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/95 to-transparent">
+<div class="max-w-4xl mx-auto relative group">
+<!-- Pill Input -->
+<div class="relative flex items-center">
+<input class="w-full h-14 pl-6 pr-16 bg-surface-container-highest border border-outline-variant/20 rounded-full text-on-surface placeholder:text-outline/50 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary/50 transition-all duration-300 arcane-glow" placeholder="Whisper to the Familiar..." type="text"/>
+<button class="absolute right-2 p-3 bg-primary-container text-on-primary-container rounded-full hover:scale-105 transition-transform active:scale-95">
+<span class="material-symbols-outlined" data-icon="send">send</span>
+</button>
+</div>
+<!-- Quick Suggestion Chips -->
+<div class="flex gap-2 mt-4 overflow-x-auto pb-2 no-scrollbar">
+<button class="px-4 py-1.5 rounded-full border border-outline-variant/20 bg-surface-container-low text-[11px] font-label tracking-wide text-on-surface-variant hover:bg-surface-bright transition-colors whitespace-nowrap">Check Lore</button>
+<button class="px-4 py-1.5 rounded-full border border-outline-variant/20 bg-surface-container-low text-[11px] font-label tracking-wide text-on-surface-variant hover:bg-surface-bright transition-colors whitespace-nowrap">View Inventory</button>
+<button class="px-4 py-1.5 rounded-full border border-outline-variant/20 bg-surface-container-low text-[11px] font-label tracking-wide text-on-surface-variant hover:bg-surface-bright transition-colors whitespace-nowrap">Analyze Presence</button>
+</div>
+</div>
+</div>
+<!-- Hidden Navigation Drawer (Overlay State) -->
+<div class="hidden fixed inset-0 z-[100] bg-black/60 backdrop-blur-sm">
+<aside class="fixed inset-y-0 left-0 z-[110] flex flex-col p-8 bg-[#1a1a28] backdrop-blur-xl h-full w-80 rounded-r-3xl shadow-[20px_0_40px_rgba(124,58,237,0.06)] border-r border-primary/10">
+<!-- Drawer Header -->
+<div class="flex items-center gap-4 mb-12">
+<div class="w-12 h-12 rounded-full void-orb flex items-center justify-center">
+<div class="w-6 h-6 rounded-full bg-secondary/30 blur-[4px]"></div>
+</div>
+<div>
+<h2 class="font-serif text-lg text-[#d2bbff]">The Grimoire</h2>
+<p class="text-[10px] uppercase tracking-[0.2em] text-on-surface-variant">The Entity's Knowledge</p>
+</div>
+</div>
+<!-- Drawer Links -->
+<nav class="flex flex-col gap-2">
+<a class="flex items-center gap-4 px-4 py-4 rounded-xl text-[#ccc3d8] hover:text-[#2dd4bf] hover:bg-white/5 transition-all group" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-sans uppercase tracking-widest text-[10px]">Character</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-4 rounded-xl text-[#ccc3d8] hover:text-[#2dd4bf] hover:bg-white/5 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="auto_stories">auto_stories</span>
+<span class="font-sans uppercase tracking-widest text-[10px]">Lore</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-4 rounded-xl text-[#ccc3d8] hover:text-[#2dd4bf] hover:bg-white/5 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="description">description</span>
+<span class="font-sans uppercase tracking-widest text-[10px]">Notes</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-4 rounded-xl text-[#ccc3d8] hover:text-[#2dd4bf] hover:bg-white/5 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="map">map</span>
+<span class="font-sans uppercase tracking-widest text-[10px]">Campaign</span>
+</a>
+<div class="mt-8 pt-8 border-t border-outline-variant/20">
+<a class="flex items-center gap-4 px-4 py-4 rounded-xl text-[#ccc3d8] hover:text-[#2dd4bf] hover:bg-white/5 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+<span class="font-sans uppercase tracking-widest text-[10px]">Settings</span>
+</a>
+</div>
+</nav>
+<div class="mt-auto p-4 bg-surface-container rounded-2xl border border-outline-variant/10">
+<span class="block text-[8px] uppercase tracking-tighter text-outline mb-1">Active Campaign</span>
+<span class="block font-serif italic text-sm text-secondary">The Obsidian Shard</span>
+</div>
+</aside>
+</div>
+</body></html>
