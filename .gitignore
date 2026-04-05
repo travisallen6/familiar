@@ -4,6 +4,7 @@
 /node_modules
 /.pnp
 .pnp.*
+.pnpm-store/
 .yarn/*
 !.yarn/patches
 !.yarn/plugins
@@ -46,3 +47,6 @@ next-env.d.ts
 
 # git worktrees
 .worktrees/
+
+# agent configuration
+.claude/settings.local.json
