@@ -8,6 +8,13 @@
       "when": 1775287438992,
       "tag": "0000_warm_wallop",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1775417446456,
+      "tag": "0001_better_auth_schema",
+      "breakpoints": true
     }
   ]
 }
