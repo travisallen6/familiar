@@ -3,6 +3,10 @@ import { drizzleAdapter } from "better-auth/adapters/drizzle";
 import { db } from "@/lib/db";
 import * as schema from "@/lib/db/schema";
 
+if (!process.env.BETTER_AUTH_URL) {
+  throw new Error("BETTER_AUTH_URL environment variable is not set");
+}
+
 export const auth = betterAuth({
   database: drizzleAdapter(db, {
     provider: "pg",
@@ -16,5 +20,5 @@ export const auth = betterAuth({
   emailAndPassword: {
     enabled: true,
   },
-  trustedOrigins: [process.env.BETTER_AUTH_URL!],
+  trustedOrigins: [process.env.BETTER_AUTH_URL],
 });
